@@ -1,0 +1,21 @@
+[package]
+name = "the-super-tiny-compiler-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+regex = "1"
+#strum = "0.24"
+strum = { version = "0.24", features = ["derive"] }
+strum_macros = "0.24"
+# rust 1.65.0 でマクロが存在しないエラーががでるのでバージョン固定
+anyhow = "<=1.0.62"
+thiserror = "<=1.0.34"
+mockall_double = "0.3"
+
+[dev-dependencies]
+mockall = "0.11.3"
+
+
